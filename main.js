@@ -56,4 +56,11 @@ var getPublicationMultiplierFormula = (symbol) => "1";
 
 var getH1 = (level) => BigNumber.TWO.pow(level);
 
+var tick = (elapsedTime, multiplier) => {
+    let dt = BigNumber.from(elapsedTime * multiplier);
+    let h1 = getH1(h1.level);
+
+    sans += dt * h1;
+}
+
 init();
