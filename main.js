@@ -14,7 +14,7 @@ var sans;
 var h1;
 
 var init = () => {
-    currency = theory.createCurrency("S", "S");
+    sans = theory.createCurrency("S", "S");
 
     // Upgrade!!
     // h1
