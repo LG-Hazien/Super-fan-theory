@@ -127,7 +127,6 @@ var init = () => {
         c1 = theory.createUpgrade(5, currency_I, new FirstFreeCost(new ExponentialCost(20, Math.log2(200))));
         c1.getDescription = (_) => Utils.getMath(getDesc(c1.level));
         c1.getInfo = (amount) => Utils.getMathTo(getDesc(c1.level), getDesc(c1.level + amount));
-        c1.bought = (s3Count);
     }
 
     // c2
@@ -137,7 +136,6 @@ var init = () => {
         c2 = theory.createUpgrade(6, currency_I, new ExponentialCost(100, Math.log2(2)));
         c2.getDescription = (_) => Utils.getMath(getDesc(c2.level));
         c2.getInfo = (amount) => Utils.getMathTo(getInfo(c2.level), getInfo(c2.level + amount));
-        c2.bought = (s3Count);
     }
 
     // a1
@@ -147,7 +145,6 @@ var init = () => {
         a1 = theory.createUpgrade(7, currency, new FirstFreeCost(new ExponentialCost(2000, 2.2)));
         a1.getDescription = (_) => Utils.getMath(getDesc(a1.level));
         a1.getInfo = (amount) => Utils.getMathTo(getDesc(a1.level), getDesc(a1.level + amount));
-        a1.bought = (s3Count);
     }
 
     // a2
@@ -157,7 +154,6 @@ var init = () => {
         a2 = theory.createUpgrade(8, currency_R, new ExponentialCost(500, 2.2));
         a2.getDescription = (_) => Utils.getMath(getDesc(a2.level));
         a2.getInfo = (amount) => Utils.getMathTo(getInfo(a2.level), getInfo(a2.level + amount));
-        a2.bought = (s3Count);
     }
 
     // a3
@@ -167,7 +163,6 @@ var init = () => {
         a3 = theory.createUpgrade(9, currency_I, new ExponentialCost(500, 2.2));
         a3.getDescription = (_) => Utils.getMath(getDesc(a3.level));
         a3.getInfo = (amount) => Utils.getMathTo(getInfo(a3.level), getInfo(a3.level + amount));
-        a3.bought = (s3Count);
     }
 
     // Permanent Upgrades
