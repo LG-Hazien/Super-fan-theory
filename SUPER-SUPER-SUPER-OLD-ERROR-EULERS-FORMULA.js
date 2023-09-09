@@ -90,7 +90,6 @@ var init = () => {
         q1 = theory.createUpgrade(1, currency, new FirstFreeCost(new ExponentialCost(10, Math.log2(1.61328))));
         q1.getDescription = (_) => Utils.getMath(getDesc(q1.level));
         q1.getInfo = (amount) => Utils.getMathTo(getDesc(q1.level), getDesc(q1.level + amount));
-        q1.bought = (s3Count);
     }
 
     // q2
@@ -100,7 +99,6 @@ var init = () => {
         q2 = theory.createUpgrade(2, currency, new ExponentialCost(5, Math.log2(60)));
         q2.getDescription = (_) => Utils.getMath(getDesc(q2.level));
         q2.getInfo = (amount) => Utils.getMathTo(getInfo(q2.level), getInfo(q2.level + amount));
-        q2.bought = (s3Count);
     }
 
     // b1
@@ -110,7 +108,6 @@ var init = () => {
         b1 = theory.createUpgrade(3, currency_R, new FirstFreeCost(ExponentialCost(20, Math.log2(200))));
         b1.getDescription = (_) => Utils.getMath(getDesc(b1.level));
         b1.getInfo = (amount) => Utils.getMathTo(getDesc(b1.level), getDesc(b1.level + amount));
-        b1.bought = (s3Count);
     }
 
     // b2
@@ -120,7 +117,6 @@ var init = () => {
         b2 = theory.createUpgrade(4, currency_R, new ExponentialCost(100, Math.log2(2)));
         b2.getDescription = (_) => Utils.getMath(getDesc(b2.level));
         b2.getInfo = (amount) => Utils.getMathTo(getInfo(b2.level), getInfo(b2.level + amount));
-        b2.bought = (s3Count);
     }
 
 
